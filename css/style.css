@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.body {
+  padding: 0px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  text-indent: 20px;
+  color: #111;
+}
+
+.dark {
+  color: #eee;
+  background: grey;
+}

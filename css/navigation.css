@@ -1,0 +1,25 @@
+.navigation {
+  padding: 10px;
+  margin: 15px;
+  max-width: 1000px;
+  display: flex;
+}
+
+.navigation__item {
+  list-style: none;
+  margin: 10px 0;
+  padding-left: 0;
+}
+
+.navigation__link {
+  color: black;
+  text-decoration: none;
+  padding-left: 0;
+  padding-bottom: 15px;
+  margin: 5px;
+}
+
+.navigation__link:visited {
+  color: black;
+  text-decoration: none;
+}

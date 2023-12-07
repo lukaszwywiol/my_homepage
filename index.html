@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moja pierwsza strona</title>
+  <link rel="icon" href="images/info.png">
+  <meta property="og:image" content="images/share.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/article.css" rel="stylesheet">
+  <link href="css/navigation.css" rel="stylesheet">
+  <link href="css/table.css" rel="stylesheet">
+  <link href="css/container.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script defer src="js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item"><a class="navigation__link" href="index.html">Strona główna</a></li>
+      <li class="navigation__item"><a class="navigation__link" href="#article__header">Curriculum Vitae</a></li>
+      <li class="navigation__item"><a class="navigation__link" href="#tabela">Tabela</a></li>
+      <li class="navigation__item"><a class="navigation__link" href="#interakcja">Projekty</a></li>
+      <ul class="navigation__list">
+        <li class=navigation__item><a class="navigation__link" href="index_cantor.html">Kalkulator walut</a></li>
+      </ul>
+      <li class="navigation__item"><a class="navigation__link" href="#symbole">Symbole użyte w tabeli</a></li>
+      <li class="navigation__item"><a class="navigation__link" href="#interakcja">Interakcja</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="article">
+      <h2 id="article__header" class="article__header">Kilka słów o mnie - Łukasz Wywioł</h2>
+      <img class="article__image" width="200" height="250" src="https://i.postimg.cc/NFW5hH53/zdj-cie-WNo-Z-400x500.jpg"
+        alt="Łukasz Wywioł">
+      <p class="article__paragraph">
+        Urodziłem się w 3 września 1981 w Zabrzu. Ukończyłem <strong>Technikum Elektroniczne</strong> w 2001 roku, a
+        po uzyskaniu tytułu technika kontynuowałem naukę na Uniwersytecie Śląskim na Wydziale Nauk o Ziemi w
+        Sosnowcu (słynna Żyleta).
+      </p>
+      <p class="article__paragraph">
+        W 2022 roku zrobiłem kurs na testera manualnego w Future Collars oraz w następnym roku z podstaw programowania
+        w języku Python na PraktycznyPython.pl.</p>
+      <p class="article__paragraph">
+        W październiku 2023 roku rozpocząłem zaawansowany kurs z HTML-a, CSS-a i JavyScript-a z myślą o tym
+        aby kontynuować swój rozwój i zainteresowania w bardziej widoczny sposób.
+      </p>
+    </div>
+    <div class="article">
+      <h2 class="article__header">Doświadczenie zawodowe</h2>
+      <p class="article__paragraph">listopad 2017 – obecnie. Pracownik magazynowy w Amazon Fulfillment Center w
+        Sosnowcu.</p>
+      <h2 class="article__header">Umiejętności</h2>
+      <p class="article__paragraph">Testowanie manualne oprogramowania, znajomość JIRA i SQL.</p>
+      <p class="article__paragraph">Podstawy programowania w Pythonie.</p>
+      <p class="article__paragraph">Dobra znajomość HTML i CSS.</p>
+      <p class="article__paragraph">Znajomość Java Script.</p>
+    </div>
+    <div class="table__container">
+      <table class="table" id="tabela">
+        <caption class="table__caption">
+          Tabela 1. Zestawienie wybranych stacji meteorologicznych
+        </caption>
+        <thead>
+          <tr class="table__row">
+            <th class="table__cell table__header" rowspan="2" scope="col" tabindex="0">kod WMO</th>
+            <th class="table__cell table__header" rowspan="2" scope="col">nazwa stacji</th>
+            <th class="table__cell table__header" colspan="2" scope="col">współrzędne geograficzne</th>
+            <th class="table__cell table__header" rowspan="2" scope="col">H<sub>S</sub> [m]</th>
+            <th class="table__cell table__header" rowspan="2" scope="col">H<sub>A</sub> [m]</th>
+            <th class="table__cell table__header" rowspan="2" scope="col">H<sub>B</sub> [m]</th>
+            <th class="table__cell table__header" rowspan="2" scope="col">dorzecze</th>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell table__header">&#966;</td>
+            <td class="table__cell table__header">&#955;</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table__row">
+            <th class="table__cell table__header" scope="row">600</th>
+            <td class="table__cell">Bielsko-Biała</td>
+            <td class="table__cell">49&deg;48'</td>
+            <td class="table__cell">19&deg;00'</td>
+            <td class="table__cell">396</td>
+            <td class="table__cell">14,2</td>
+            <td class="table__cell">400,11</td>
+            <td class="table__cell">Wisła do Przemszy (Mała Wisła)</td>
+          </tr>
+          <tr class="table__row">
+            <th class="table__cell table__header" scope="row">550</th>
+            <td class="table__cell">Częstochowa</td>
+            <td class="table__cell">50&deg;49;</td>
+            <td class="table__cell">19&deg;05'</td>
+            <td class="table__cell">293</td>
+            <td class="table__cell">10,0</td>
+            <td class="table__cell">295,77</td>
+            <td class="table__cell">Warta do Widawki</td>
+          </tr>
+          <tr class="table__row">
+            <th class="table__cell table__header" scope="row">650</th>
+            <td class="table__cell">Kasprowy Wierch</td>
+            <td class="table__cell">49&deg;14'</td>
+            <td class="table__cell">19&deg;59'</td>
+            <td class="table__cell">1990</td>
+            <td class="table__cell">16,0</td>
+            <td class="table__cell">1988,47</td>
+            <td class="table__cell">Dunajec do Popradu</td>
+          </tr>
+          <tr class="table__row">
+            <th class="table__cell table__header" scope="row">560</th>
+            <td class="table__cell">Katowice-Muchowiec</td>
+            <td class="table__cell">50&deg;14'</td>
+            <td class="table__cell">19&deg;02'</td>
+            <td class="table__cell">278</td>
+            <td class="table__cell">10,0</td>
+            <td class="table__cell">280,12</td>
+            <td class="table__cell">Przemsza</td>
+          </tr>
+          <tr class="table__row">
+            <th class="table__cell table__header" scope="row">465</th>
+            <td class="table__cell">Łódź-Lublinek</td>
+            <td class="table__cell">51&deg;43'</td>
+            <td class="table__cell">19&deg;23'</td>
+            <td class="table__cell">174</td>
+            <td class="table__cell">10,0</td>
+            <td class="table__cell">181,39</td>
+            <td class="table__cell">Ner</td>
+          </tr>
+          <tr class="table__row">
+            <th class="table__cell table__header" scope="row">625</th>
+            <td class="table__cell">Zakopane</td>
+            <td class="table__cell">49&deg;18'</td>
+            <td class="table__cell">19&deg;58'</td>
+            <td class="table__cell">852</td>
+            <td class="table__cell">15,1</td>
+            <td class="table__cell">854,39</td>
+            <td class="table__cell">Dunajec do Popradu</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="article__header" id="symbole">Symbole użyte w tabeli</h3>
+      <p class="article__paragraph">H<sub>S</sub> wysokość stacji (równoważna wysokości ogródka meteorologicznego) w
+        układzie EVRF2007 [m n.p.m.]</p>
+      <p class="article__paragraph">H<sub>A</sub> wysokość anemometru nad powierzchnią gruntu [m]</p>
+      <p class="article__paragraph">H<sub>B</sub> wysokość barometru w układzie EVRF2007 [m n.p.m.]</p>
+    </div>
+    <h2 class="article__header" id="interakcja">Interakcja w JS-ie</h2>
+    <p class="article__paragraph article__paragraph--button">
+      <button class="button">Włącz <span class="themeName">ciemny</span> motyw</button>
+    </p>
+    </main>
+    <p class="footer__paragraph">
+    <footer class="footer">&copy; Copyright 2023 by Łukasz Wywioł - wszystkie prawa zastrzeżone
+    </footer>
+    </p>
+</body>
+
+</html>

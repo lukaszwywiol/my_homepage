@@ -1,0 +1,40 @@
+.table {
+  font-family: "Lato", sans-serif;
+  border-collapse: collapse;
+  max-width: 100%;
+}
+
+.table__container {
+  max-width: 700%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.table__cell {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table__caption {
+  caption-side: botton;
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.table__header {
+  background-color: rgba(88, 75, 75, 0.464);
+  color: black;
+  font-weight: normal;
+}
+
+.table__row:hover {
+  background: #cdc;
+}
+
+.table__container {
+  overflow-x: auto;
+}

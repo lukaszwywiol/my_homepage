@@ -1,0 +1,33 @@
+.article {
+  max-width: 1000px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.article__header {
+  color: red;
+  text-align: center;
+}
+
+.article__paragraph {
+  color: black;
+  box-shadow: 2px 2px 5px #ccc;
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+  line-height: 1.5;
+  text-indent: 25px;
+}
+
+.article__paragraph--button {
+  text-align: center;
+}
+
+.article__image {
+  border-radius: 10%;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 5px #aaa;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
